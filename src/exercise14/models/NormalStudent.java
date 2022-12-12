@@ -12,7 +12,7 @@ public class NormalStudent extends Student{
     public NormalStudent(String fullName, String dob, Sex sex, String phoneNumber, String schoolName, int gradeLevel, double toeic, double entryTestScore) {
         super(fullName, dob, sex, phoneNumber, schoolName, gradeLevel, STUDENT_LEVEL);
         this.toeic = toeic;
-        this.entryTestScore = entryTestScore;
+        this.setEntryTestScore(entryTestScore);
     }
 
     public double getToeic() {
@@ -28,7 +28,7 @@ public class NormalStudent extends Student{
     }
 
     public void setEntryTestScore(double entryTestScore) {
-        this.entryTestScore = entryTestScore;
+        if(entryTestScore >= 0 && entryTestScore <= 10.0) this.entryTestScore = entryTestScore;
     }
 
     @Override

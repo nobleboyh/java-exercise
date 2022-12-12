@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="finish exercise 13">
+    <list default="true" id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="add exercise14 (not tested)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise14/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise14/models/GoodStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/models/GoodStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise14/models/NormalStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/models/NormalStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise14/utils/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/utils/StudentManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,13 +42,13 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.exercise13.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise1.Main" />
+  <component name="RunManager" selected="Application.exercise14.Main">
+    <configuration name="exercise13.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise13.Main" />
       <module name="exercise-fpt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise1.*" />
+          <option name="PATTERN" value="exercise13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -52,12 +56,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exercise13.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise13.Main" />
+    <configuration name="exercise14.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise14.Main" />
       <module name="exercise-fpt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercise13.*" />
+          <option name="PATTERN" value="exercise14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -106,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.exercise14.Main" />
         <item itemvalue="Application.exercise13.Main" />
         <item itemvalue="Application.exercise8.Main" />
         <item itemvalue="Application.exercise5.Main" />
         <item itemvalue="Application.exercise3.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670861631830</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add exercise14 (not tested)">
+      <created>1670865907357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670865907357</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +169,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix conflict" />
     <MESSAGE value="finish exercise 13" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish exercise 13" />
+    <MESSAGE value="add exercise14 (not tested)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exercise14 (not tested)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

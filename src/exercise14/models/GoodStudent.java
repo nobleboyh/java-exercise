@@ -11,7 +11,7 @@ public class GoodStudent extends Student{
 
     public GoodStudent(String fullName, String dob, Sex sex, String phoneNumber, String schoolName, int gradeLevel, double gpa, String bestRewardName) {
         super(fullName, dob, sex, phoneNumber, schoolName, gradeLevel, STUDENT_LEVEL);
-        this.gpa = gpa;
+        this.setGpa(gpa);
         this.bestRewardName = bestRewardName;
     }
 
@@ -20,7 +20,7 @@ public class GoodStudent extends Student{
     }
 
     public void setGpa(double gpa) {
-        this.gpa = gpa;
+        if (gpa >=0 && gpa <= 10) this.gpa = gpa;
     }
 
     public String getBestRewardName() {

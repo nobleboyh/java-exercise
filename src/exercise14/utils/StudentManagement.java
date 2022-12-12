@@ -16,9 +16,9 @@ import java.util.regex.Pattern;
 public class StudentManagement {
     private static final List<Student> studentList = new LinkedList<>();
 
-    private static final Pattern regexPhoneNumber = Pattern.compile("^(090|098|031|035|038)([0-9]{7})$");
+    private static final Pattern regexPhoneNumber = Pattern.compile("^(090|098|091|031|035|038)([0-9]{7})$");
 
-    private static final Pattern regexDoB = Pattern.compile("^(0[1-9]|[12][0-9]|3[01])(/)(0[1-9]|1[012])(/)(19|20)\\d\\d$");
+    private static final Pattern regexDoB = Pattern.compile("(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\\d\\d$");
 
     private static final Pattern regexName = Pattern.compile("^[a-zA-Z\\s]{10,50}");
 
@@ -36,10 +36,10 @@ public class StudentManagement {
 
     public static List<Student> getQualifiedStudent(int limit){
         List<Student> finalList = new LinkedList<>();
-        Comparator<GoodStudent> goodStudentGpa = (a,b) -> (int) (a.getGpa() - b.getGpa());
+        Comparator<GoodStudent> goodStudentGpa = (a,b) -> (int) (b.getGpa() - a.getGpa());
         Comparator<GoodStudent> goodStudentName = Comparator.comparing(Student::getFullName);
-        Comparator<NormalStudent> normalStudentEntranceGrade = (a,b) -> (int) (a.getEntryTestScore() - b.getEntryTestScore());
-        Comparator<NormalStudent> normalStudentEntranceToeic = (a,b) -> (int) (a.getToeic() - b.getToeic());
+        Comparator<NormalStudent> normalStudentEntranceGrade = (a,b) -> (int) (b.getEntryTestScore() - a.getEntryTestScore());
+        Comparator<NormalStudent> normalStudentEntranceToeic = (a,b) -> (int) (b.getToeic() - a.getToeic());
 
         List<GoodStudent> goodStudentList = studentList.stream().filter(s->s.getStudentLevel()== StudentLevel.Good).map(s->(GoodStudent)s)
                 .sorted(goodStudentGpa.thenComparing(goodStudentName)).toList();
@@ -56,8 +56,8 @@ public class StudentManagement {
     }
 
     public static void showNameAndPhoneAll(){
-        Comparator<Student> studentNameComp = (a,b)->b.getFullName().compareTo(a.getFullName());
-        Comparator<Student> studentNamePhone = Comparator.comparing(Student::getPhoneNumber);
+        Comparator<Student> studentNameComp = Comparator.comparing(Student::getFullName);
+        Comparator<Student> studentNamePhone = Comparator.comparing(Student::getPhoneNumber).reversed();
 
         studentList.stream().sorted(studentNameComp.thenComparing(studentNamePhone))
                 .forEach(s -> System.out.println(s.getFullName() + ":" + s.getPhoneNumber()));
@@ -65,13 +65,13 @@ public class StudentManagement {
 
     //MARK:- Private methods
     private static void validStudent(Student student){
-        if(regexName.matcher(student.getFullName()).matches()){
+        if(!regexName.matcher(student.getFullName()).matches()){
             throw new InvalidFullNameException("Full name invalid");
         }
-        if(regexDoB.matcher(student.getDob()).matches()){
+        if(!regexDoB.matcher(student.getDob()).matches()){
             throw new InvalidDOBException("DOB invalid");
         }
-        if(regexPhoneNumber.matcher(student.getPhoneNumber()).matches()){
+        if(!regexPhoneNumber.matcher(student.getPhoneNumber()).matches()){
             throw new InvalidPhoneNumberException("Phone invalid");
         }
     }
