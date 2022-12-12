@@ -13,7 +13,7 @@ public class Main {
         Vehicle vehicle1 = new Car(1,"Toyota", new Date(), 10000, "red", 5, "V8");
         Vehicle vehicle2 = new Truck(2,"Truck", new Date(), 10000, "red", 5000);
         Vehicle vehicle3 = new MotorBike(3,"Honda", new Date(), 10000, "red", 200);
-        Vehicle vehicle4 = new MotorBike(3,"HondaA", new Date(), 10000, "red", 200);
+        Vehicle vehicle4 = new MotorBike(3,"HondaA", new Date(), 10000, "red", 300);
 
 
         VehicleManagement.addVehicle(vehicle1);
