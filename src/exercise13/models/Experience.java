@@ -8,8 +8,12 @@ public class Experience extends Employee{
 
     private String skills;
 
-    public Experience(int id, String fullName, Date birthDay, int phoneNumber, String email, EmployeeType employeeType, List<Certificate> certificateList, int years, String skills) {
-        super(id, fullName, birthDay, phoneNumber, email, employeeType, certificateList);
+    public Experience() {
+        super(EmployeeType.Experienced);
+    }
+
+    public Experience(int id, String fullName, String birthDay, String phoneNumber, String email, List<Certificate> certificateList, int years, String skills) {
+        super(id, fullName, birthDay, phoneNumber, email, EmployeeType.Experienced, certificateList);
         this.years = years;
         this.skills = skills;
     }
@@ -48,5 +52,10 @@ public class Experience extends Employee{
                 ", employeeType=" + employeeType +
                 ", certificateList=" + certificateList +
                 '}';
+    }
+
+    @Override
+    public EmployeeType getEmployeeType(){
+        return EmployeeType.Experienced;
     }
 }

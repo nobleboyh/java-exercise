@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a4265fc-fa14-49ee-91ba-d4ac0a8c3d86" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exercise-fpt.iml" afterDir="false" />
+    <list default="true" id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="fix conflict">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/models/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/models/Experience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/models/Fresher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/models/Fresher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/models/Intern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/models/Intern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercise13/utils/EmployeeManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise13/utils/EmployeeManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +37,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.exercise8.Main">
+}</component>
+  <component name="RunManager" selected="Application.exercise13.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise1.Main" />
       <module name="exercise-fpt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercise1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exercise13.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise13.Main" />
+      <module name="exercise-fpt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -98,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.exercise13.Main" />
         <item itemvalue="Application.exercise8.Main" />
         <item itemvalue="Application.exercise5.Main" />
         <item itemvalue="Application.exercise3.Main" />
@@ -115,6 +130,14 @@
       <updated>1670729068959</updated>
       <workItem from="1670729070288" duration="10112000" />
     </task>
+    <task id="LOCAL-00001" summary="fix conflict">
+      <created>1670855319349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1670855319349</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +153,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix conflict" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix conflict" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -10,8 +10,12 @@ public class Fresher extends Employee{
 
     private String GraduatedSchool;
 
-    public Fresher(int id, String fullName, Date birthDay, int phoneNumber, String email, EmployeeType employeeType, List<Certificate> certificateList, Date graduateYear, String graduationRank, String graduatedSchool) {
-        super(id, fullName, birthDay, phoneNumber, email, employeeType, certificateList);
+    public Fresher() {
+        super(EmployeeType.Fresher);
+    }
+
+    public Fresher(int id, String fullName, String birthDay, String phoneNumber, String email, List<Certificate> certificateList, Date graduateYear, String graduationRank, String graduatedSchool) {
+        super(id, fullName, birthDay, phoneNumber, email, EmployeeType.Fresher, certificateList);
         this.graduateYear = graduateYear;
         GraduationRank = graduationRank;
         GraduatedSchool = graduatedSchool;
@@ -60,5 +64,10 @@ public class Fresher extends Employee{
     @Override
     public void showMe() {
         System.out.println(this);
+    }
+
+    @Override
+    public EmployeeType getEmployeeType(){
+        return EmployeeType.Fresher;
     }
 }

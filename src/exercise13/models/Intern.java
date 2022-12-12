@@ -10,8 +10,12 @@ public class Intern extends Employee{
 
     private String school;
 
-    public Intern(int id, String fullName, Date birthDay, int phoneNumber, String email, EmployeeType employeeType, List<Certificate> certificateList, String major, int semester, String school) {
-        super(id, fullName, birthDay, phoneNumber, email, employeeType, certificateList);
+    public Intern() {
+        super(EmployeeType.Intern);
+    }
+
+    public Intern(int id, String fullName, String birthDay, String phoneNumber, String email, List<Certificate> certificateList, String major, int semester, String school) {
+        super(id, fullName, birthDay, phoneNumber, email, EmployeeType.Intern, certificateList);
         this.major = major;
         this.semester = semester;
         this.school = school;
@@ -60,5 +64,10 @@ public class Intern extends Employee{
     @Override
     public void showMe() {
         System.out.println(this);
+    }
+
+    @Override
+    public EmployeeType getEmployeeType(){
+        return EmployeeType.Intern;
     }
 }
