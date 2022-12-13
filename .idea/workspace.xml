@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="add exercise14 (not tested)">
+    <list default="true" id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="add exercise14">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercise14/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercise14/models/GoodStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/models/GoodStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercise14/models/NormalStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/models/NormalStudent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercise14/utils/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercise14/utils/StudentManagement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +13,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -35,14 +32,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager" selected="Application.exercise14.Main">
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exercise15.Main" />
+      <module name="exercise-fpt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercise15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="exercise13.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exercise13.Main" />
       <module name="exercise-fpt" />
@@ -62,19 +75,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="exercise14.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exercise3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise3.Main" />
-      <module name="exercise-fpt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercise3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,23 +110,24 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.exercise14.Main" />
         <item itemvalue="Application.exercise13.Main" />
         <item itemvalue="Application.exercise8.Main" />
         <item itemvalue="Application.exercise5.Main" />
-        <item itemvalue="Application.exercise3.Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5a4265fc-fa14-49ee-91ba-d4ac0a8c3d86" name="Changes" comment="" />
+      <changelist id="6a1651d4-3301-48fa-ab90-b349017d4d86" name="Changes" comment="add exercise14" />
       <created>1670729068959</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670729068959</updated>
       <workItem from="1670729070288" duration="10112000" />
+      <workItem from="1670901448101" duration="5394000" />
     </task>
     <task id="LOCAL-00001" summary="fix conflict">
       <created>1670855319349</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670865907357</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add exercise14">
+      <created>1670868158498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670868158498</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +178,8 @@
     <MESSAGE value="fix conflict" />
     <MESSAGE value="finish exercise 13" />
     <MESSAGE value="add exercise14 (not tested)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add exercise14 (not tested)" />
+    <MESSAGE value="add exercise14" />
+    <option name="LAST_COMMIT_MESSAGE" value="add exercise14" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
